@@ -1,0 +1,52 @@
+.btn{
+  position: relative;
+  left: 35px;
+  width:300.33px;
+}
+.txt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color:rgb(225, 65, 158);
+  height: 60px;
+}
+
+.drp {
+  width:100%;
+  height:60px;
+}
+
+.bg
+{
+  position: fixed;
+  background-size:cover;
+  z-index: -1;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
+.bgimg
+{
+  width:100%;
+  height:100%;
+}
+
+
+.txtson
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.fld
+{
+  width:100%;
+  height: 70px;
+}
+
+.rad
+{
+  height: 60px;
+}

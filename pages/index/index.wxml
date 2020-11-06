@@ -1,0 +1,46 @@
+<!--index.wxml-->
+<view class = "page-body">
+  <view class = ".bg" style="opacity: {{0.45}}">
+      <image class = ".bgimg" mode="scaleToFill" src="../../images/bgp.jpg"></image>
+  </view>
+  <view class = ".txt">
+    <view class = ".txtson">
+      <text>请选择结算月份</text>
+    </view>
+  </view>
+  <view class = ".drp" active-color = "grey">
+    <van-cell title="月份" is-link value="{{month}}" bind:click="showPopup" />
+      <van-popup show="{{show}}" round position="bottom" custom-size="height:30%;" bind:close="onClose">
+      <van-picker columns = "{{option1}}" default-index="{{0}}" bind:change="selectMonth"/>
+      </van-popup>
+  </view>
+
+  <view class = ".txt">
+    <view class = ".txtson">
+      <text>请输入时薪</text>
+    </view>
+  </view>
+  <view class = ".fld">
+    <van-field bind:change = "getPerMoney" v-model="{{money}}" label="时薪"/>
+  </view>
+
+  <view class = ".txt">
+    <view class = ".txtson">
+      <text>请输入员工姓名</text>
+    </view>
+  </view>
+  <view class = ".fld">
+    <van-field bind:change = "getWorker" v-model="reqId" label="员工姓名"/>
+  </view>
+  <view class = ".rad">
+    <van-radio-group value="{{ sex }}" bind:change="onChange">
+      <van-radio name="男">男</van-radio>
+      <van-radio name="女">女</van-radio>
+    </van-radio-group>
+  </view>
+
+  <view class = ".btn">
+    <van-button bind:click = "search" round block = "true" type = "primary" size = "large" color="linear-gradient(to right, #4bb0ff, #6149f6)">查询</van-button>
+  <van-dialog id="van-dialog"/>
+  </view>
+</view>

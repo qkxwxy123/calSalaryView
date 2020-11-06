@@ -1,0 +1,15 @@
+<!--pages/addInfo/addInfo.wxml-->
+<view class = "page-body">
+  <view class = ".bg" style="opacity: {{0.45}}">
+      <image class = ".bgimg" mode="scaleToFill" src="../../images/bgp.jpg"></image>
+  </view>
+  <view class = ".inner">
+  <van-button round type="primary"  size = "large" color="linear-gradient(to right, #bbffff, #668b8b)" bindtap = "addEmployee">添加员工</van-button>
+  <!--
+    <button class = ".twoButton" bindtap = "addEmployee"> 添加员工 </button>
+    -->
+  </view>
+  <view class = ".inner2">
+    <van-button round type="primary"  size = "large" color="linear-gradient(to right, #bbffff, #668b8b)" bindtap = "addWorkTime">添加时长</van-button>
+  </view>
+</view>

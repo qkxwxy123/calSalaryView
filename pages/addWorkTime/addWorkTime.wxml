@@ -1,0 +1,29 @@
+<view class = 'page-body'>
+  <view class = ".bg" style="opacity: {{0.45}}">
+      <image class = ".bgimg" mode="scaleToFill" src="../../images/bgp.jpg"></image>
+  </view>
+  <view class = ".fld">
+    <van-field bind:change = "getName" v-model = "name" label = "姓名"/>
+    <van-field bind:change = "getSex" v-model = "sex" label = "性别"/>
+
+    <van-cell title="开始时间" is-link value="{{stTime}}" bind:click="showPopup1"/>
+    <van-popup show="{{show1}}" round position = "bottom" custom-size = "height:30%;" bind:close="onClose1">
+      <van-datetime-picker type="time" value="{{stTime}}" bind:confirm="onInput1" />
+    </van-popup>
+
+    <van-cell title="结束时间" is-link value="{{edTime}}" bind:click="showPopup2"/>
+    <van-popup show="{{show2}}" round position = "bottom" custom-size = "height:30%;" bind:close="onClose2">
+      <van-datetime-picker type="time" value="{{edTime}}" bind:confirm="onInput2" />
+    </van-popup>
+
+    <van-cell title="月份" is-link value="{{month}}" bind:click="showPopup" />
+      <van-popup show="{{show}}" round position="bottom" custom-size="height:30%;" bind:close="onClose">
+      <van-picker columns = "{{option1}}" default-index="{{0}}" bind:change="selectMonth"/>
+      </van-popup>
+  </view>
+
+  <view class = ".btn">
+    <van-button round type = "primary" size = "large" color = "linear-gradient(to right, #bbffff, #668b8b)" bind:click = "submit">提交</van-button>
+  </view>
+  <van-dialog id="van-dialog"/>
+</view>

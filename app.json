@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/getInfo/getInfo",
+    "pages/addInfo/addInfo",
+    "pages/addEmployee/addEmployee",
+    "pages/addWorkTime/addWorkTime"
+  ],
+  "usingComponents":{
+    "van-dropdown-menu": "../../miniprogram_npm/vant-weapp/dropdown-menu/index",
+    "van-button": "../../miniprogram_npm/vant-weapp/button/index",
+    "van-dropdown-item": "../../miniprogram_npm/vant-weapp/dropdown-item/index",
+    "van-field": "../../miniprogram_npm/vant-weapp/field/index",
+    "van-dialog": "../../miniprogram_npm/vant-weapp/dialog/index",
+    "van-picker": "../../miniprogram_npm/vant-weapp/picker/index",
+    "van-popup": "../../miniprogram_npm/vant-weapp/popup/index",
+    "van-cell": "../../miniprogram_npm/vant-weapp/cell/index",
+    "van-checkbox": "../../miniprogram_npm/vant-weapp/checkbox/index",
+    "van-checkbox-group": "../../miniprogram_npm/vant-weapp/checkbox-group/index",
+    "van-radio": "../../miniprogram_npm/vant-weapp/radio/index",
+    "van-radio-group": "../../miniprogram_npm/vant-weapp/radio-group/index",
+    "van-datetime-picker": "../../miniprogram_npm/vant-weapp/datetime-picker/index"
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "工资结算",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/index1.png",
+        "selectedIconPath": "images/index2.png",
+        "text": "工资结算"
+      },
+      {
+        "pagePath": "pages/getInfo/getInfo",
+        "iconPath": "images/员工信息1.png",
+        "selectedIconPath": "images/员工信息2.png",
+        "text": "员工信息"
+      },
+      {
+        "pagePath": "pages/addInfo/addInfo",
+        "iconPath": "images/添加1.png",
+        "selectedIconPath": "images/添加2.png",
+        "text": "添加"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "sitemapLocation": "sitemap.json"
+}

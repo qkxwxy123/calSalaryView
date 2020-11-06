@@ -1,0 +1,17 @@
+<!--pages/addEmployee/addEmployee.wxml-->
+<view class = "page-body">
+  <view class = ".bg" style="opacity: {{0.45}}">
+      <image class = ".bgimg" mode="scaleToFill" src="../../images/bgp.jpg"></image>
+  </view>
+
+  <view class = ".fld">
+    <van-field bind:change="getName" v-model = "name" label = "姓名"/>
+    <van-field bind:change="getSex" v-model = "sex" label = "性别"/>
+    <van-field bind:change="getPhone" v-model = "phone" label = "联系电话"/>
+  </view>
+
+  <view class = ".btn">
+    <van-button round type="primary"  size = "large" color="linear-gradient(to right, #bbffff, #668b8b)" bind:click = "submit">提交</van-button>
+  </view>
+  <van-dialog id="van-dialog"/>
+</view>

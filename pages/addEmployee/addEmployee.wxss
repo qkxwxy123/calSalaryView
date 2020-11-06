@@ -1,0 +1,34 @@
+/* pages/addEmployee/addEmployee.wxss */
+.inner {
+  width: 380px;
+  height: 40px;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.fld
+{
+  margin-top: 20px;
+  width:100%;
+  height: 150px;
+}
+.btn{
+  position: relative;
+  left: 30px;
+  width:300.33px;
+}
+.bg
+{
+  position: fixed;
+  background-size:cover;
+  z-index: -1;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
+.bgimg
+{
+  width:100%;
+  height:100%;
+}

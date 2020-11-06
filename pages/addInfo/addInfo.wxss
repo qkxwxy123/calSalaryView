@@ -1,0 +1,51 @@
+/* pages/addInfo/addInfo.wxss */
+
+.twoButton {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(4, 125, 129, 0.527);
+  color: rgb(247, 203, 7);
+  font-size: 30px;
+  margin-top: 30px;
+}
+
+.twoButtons {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(4, 125, 129, 0.527);
+  color: rgb(247, 203, 7);
+  font-size: 25px;
+  margin-top: 30px;
+}
+
+.inner2 {
+  margin-top: 150px;
+}
+
+.inner {
+  margin-top: 120px;
+}
+
+.bg
+{
+  position: fixed;
+  background-size:cover;
+  z-index: -1;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
+.bgimg
+{
+  width:100%;
+  height:100%;
+}
